@@ -1,2 +1,7 @@
 name = "test-landing"
 title = "Spark Test Landing"
+
+[substitutions]
+service-fullname = "MongoDB Atlas"
+service = "Atlas"
+Service = "Atlas"
