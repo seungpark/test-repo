@@ -32,6 +32,10 @@ This is a paragraph following the heading, preceding the procedure directive
 
    .. step:: (Single Line) Under :guilabel:`Source File`, click :guilabel:`Select a file`. 
 
+   .. step:: (Single Line) Under :guilabel:`Source File`, click :guilabel:`Select a file`. 
+
+      And added content under
+
 
    .. step:: (Multi Line) Select the exported 
       JSON file you want to import.
