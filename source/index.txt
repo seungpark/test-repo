@@ -37,3 +37,7 @@ This is a paragraph following the heading, preceding the procedure directive
       JSON file you want to import.
 
    .. step:: (Single Line) Select the exported JSON file you want to import.
+
+   .. step::
+
+      (single line on directive content block) Select the exported JSON file you want to import.
