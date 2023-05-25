@@ -1,7 +1,2 @@
-name = "test-landing"
-title = "Spark Test Landing"
-
-[substitutions]
-service-fullname = "MongoDB Atlas"
-service = "Atlas"
-Service = "Atlas"
+name = "DOP-3688-docs"
+title = "facet test"
