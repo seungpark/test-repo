@@ -1,4 +1,4 @@
-name = "test-landing"
+name = "docs-test-spark"
 title = "Spark Test Landing"
 
 [substitutions]
