@@ -9,7 +9,7 @@ DOP-4555 testing tabs and code blocks
    .. tab::
       :tabid: nodejs
 
-      .. code-block:: nodejs
+      .. code-block:: javascript
 
          import mongodb from 'mongodb';
          
