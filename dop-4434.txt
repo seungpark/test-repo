@@ -1,0 +1,55 @@
+=====================================
+DOP-4555 testing tabs and code blocks
+=====================================
+
+.. tabs-selector:: drivers
+
+.. tabs-drivers::
+
+   .. tab::
+      :tabid: nodejs
+
+      .. code-block:: nodejs
+
+         import mongodb from 'mongodb';
+         
+         const MongoClient = mongodb.MongoClient;
+         const uri = "mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority";
+         const client = new MongoClient(uri, { useNewUrlParser: true });
+         client.connect(err => {
+           const collection = client.db("<databaseName>").collection("<collectionName>");
+           // perform actions on the collection object
+           client.close();
+         });
+
+   .. tab::
+      :tabid: cpp
+
+      .. code-block:: cpp
+
+         #include <mongocxx/client.hpp>
+         #include <mongocxx/instance.hpp>
+
+         //...
+
+         mongocxx::instance inst{};
+         mongocxx::client conn{mongocxx::uri{"mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority"}};
+         mongocxx::database db = conn["<databaseName>"];
+
+
+
+Regular Code block
+------------------
+
+.. code-block:: nodejs
+
+   import mongodb from 'mongodb';
+         
+   const MongoClient = mongodb.MongoClient;
+   const uri = "mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority";
+   const client = new MongoClient(uri, { useNewUrlParser: true });
+   client.connect(err => {
+      const collection = client.db("<databaseName>").collection("<collectionName>");
+      // perform actions on the collection object
+      client.close();
+   });
