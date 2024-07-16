@@ -1,0 +1,81 @@
+============================================
+DOP-4767 Testing LG Components for Dark Mode
+============================================
+
+----------
+Subheading
+----------
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra at velit ac pellentesque. Pellentesque commodo eros et egestas tincidunt. Integer commodo ornare eleifend. Sed nec ex ac nibh semper elementum. Duis ac est neque. Pellentesque porta leo et ipsum viverra bibendum. Donec rutrum magna vel nisi iaculis pretium at non ante. Nulla sagittis lacinia nisl, quis suscipit turpis ullamcorper ac. Mauris sodales nisi enim, sit amet sollicitudin neque finibus in. Morbi sodales lacus sed urna facilisis, eu auctor leo sagittis. Aliquam rhoncus lacus at bibendum viverra.
+
+.. button:: Get Started
+      :uri: https://www.mongodb.com/docs/atlas/getting-started/
+
+
+.. kicker:: What You Can Do
+
+.. tabs-selector:: drivers
+
+.. tabs-drivers::
+
+   .. tab::
+      :tabid: nodejs
+
+      .. code-block:: javascript
+
+         import mongodb from 'mongodb';
+         
+         const MongoClient = mongodb.MongoClient;
+         const uri = "mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority";
+         const client = new MongoClient(uri, { useNewUrlParser: true });
+         client.connect(err => {
+           const collection = client.db("<databaseName>").collection("<collectionName>");
+           // perform actions on the collection object
+           client.close();
+         });
+
+   .. tab::
+      :tabid: cpp
+
+      .. code-block:: cpp
+
+         #include <mongocxx/client.hpp>
+         #include <mongocxx/instance.hpp>
+
+         //...
+
+         mongocxx::instance inst{};
+         mongocxx::client conn{mongocxx::uri{"mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority"}};
+         mongocxx::database db = conn["<databaseName>"];
+
+
+
+
+.. tabs::
+  
+	.. tab:: Deploy a Database
+		:tabid: deploy
+
+		Tab content 1
+
+	.. tab:: Secure your Database
+		:tabid: secure
+
+		Tab content 2
+
+	.. tab:: Connect to your Database
+		:tabid: connect
+
+		Tab content 3
+
+	.. tab:: Optimize your Database
+		:tabid: optimize
+
+		Tab content 4
+
+		Tabs in line 136 of tabs/src/Tabs.tsx of lg/tabs
+
+		const [tabNode, setTabNode] = useState<HTMLDivElement | null>(null);
+		const [panelNode, setPanelNode] = useState<HTMLDivElement | null>(null);
+
+		define a null element at build time. why not use useRef? fork and try this
