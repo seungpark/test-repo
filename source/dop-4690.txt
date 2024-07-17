@@ -1,0 +1,59 @@
+=============================
+DOP-4690 Testing collapsibles
+=============================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. tabs-selector:: drivers
+
+.. collapsible::
+   :heading: This is a heading
+   :sub_heading: This is a subheading
+
+   This is collapsible content
+
+   .. code-block:: javascript
+      
+      This is code within collapsible content
+
+
+.. collapsible::
+   :heading: There is a tab inside
+   :sub_heading: Verify inner contents are working
+
+   This is second collapsible content
+
+   .. tabs::
+
+      .. tab:: Project Alerts
+         :tabid: project
+
+         Project alerts tabbed content within collapsible
+
+      .. tab:: Organization Alerts
+         :tabid: org
+
+         Organization Alerts
+
+
+.. collapsible::
+   :heading: This collapsible has no subheader
+
+   This is second collapsible content
+
+   
+   .. tabs-drivers::
+
+      .. tab::
+         :tabid: python
+
+         Python tab
+
+      .. tab::
+         :tabid: ruby
+
+         Ruby tab
