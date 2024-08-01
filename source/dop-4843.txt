@@ -19,8 +19,6 @@ This is a reference link :ref:`reference-target`
 
 This is an `external link <https://mongodb.com/docs>`__
 
-This is an inline literal ``inline literal``
-
 
 .. literalinclude:: /includes/test-literal-include.txt
 
@@ -69,16 +67,3 @@ This contains inline keycodes :kbd:`CTRL` + :kbd:`C`
    :titlesonly:
 
    DOP-4843-guide </dop-4843-guide>
-
-.. toctree::
-   :titlesonly:
-
-
-   Access Data with Atlas Data Lake <https://docs.mongodb.com/datalake/>
-   Deploy Apps and Services <https://www.mongodb.com/docs/atlas/app-services/>
-   DOP-4555 </dop-4555>
-   DOP-4434 </dop-4434>
-   No tabs </blank-page>
-   DOP-4767 </dop-4767>
-   DOP-4690 </dop-4690>
-   DOP-4843 </dop-4843>

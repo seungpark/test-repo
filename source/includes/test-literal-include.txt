@@ -1,0 +1,6 @@
+==========================
+This is a literal includes
+==========================
+
+Test includes by calling this page in other pages
+This should be a code block
