@@ -1,0 +1,16 @@
+
+.. facet::
+   :name: target_product
+   :values: atlas
+
+   .. facet::
+      :name: sub_product
+      :values: atlas-cli
+
+===========================
+Testing Facet Display Names
+===========================
+
+This page should have both facets:
+- atlas > atlas cli
+- atlas > charts
